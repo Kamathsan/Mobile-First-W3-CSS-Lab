@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lab 8</title>
+        <link rel="stylesheet" href="w3.css">
+    </head>
+    <body>
+        <!-- Basic Table -->
+        <table class="w3-container">
+            <tr>
+                <th>Player name</th>
+                <th>Team</th>
+                <th>Yards</th>
+                <th>TD</th>
+            </tr>
+            <tr>
+                <td>Nick Foles</td>
+                <td>Philadelphia Eagles</td>
+                <td>373</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>Tom Brady </td>
+                <td>New England Patriots </td>
+                <td>505</td>
+                <td>3</td>
+            </tr>
+        </table>
+
+
+        <!-- Basic Table with w3-table --><br><br>
+        <table class="w3-table">
+            <tr>
+                <th>Player name</th>
+                <th>Team</th>
+                <th>Yards</th>
+                <th>TD</th>
+            </tr>
+            <tr>
+                <td>Nick Foles</td>
+                <td>Philadelphia Eagles</td>
+                <td>373</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>Tom Brady </td>
+                <td>New England Patriots </td>
+                <td>505</td>
+                <td>3</td>
+            </tr>
+        </table>
+
+        <!-- Basic Table with w3-table and w3-striped --><br><br>
+        <table class="w3-table w3-striped">
+            <tr>
+                <th>Player name</th>
+                <th>Team</th>
+                <th>Yards</th>
+                <th>TD</th>
+            </tr>
+            <tr>
+                <td>Nick Foles</td>
+                <td>Philadelphia Eagles</td>
+                <td>373</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>Tom Brady </td>
+                <td>New England Patriots </td>
+                <td>505</td>
+                <td>3</td>
+            </tr>
+        </table>
+
+        <!-- Basic Table with w3-table and w3-striped with all borders--><br><br>
+        <table class="w3-table w3-striped w3-table-all">
+            <tr>
+                <th>Player name</th>
+                <th>Team</th>
+                <th>Yards</th>
+                <th>TD</th>
+            </tr>
+            <tr>
+                <td>Nick Foles</td>
+                <td>Philadelphia Eagles</td>
+                <td>373</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>Tom Brady </td>
+                <td>New England Patriots </td>
+                <td>505</td>
+                <td>3</td>
+            </tr>
+        </table>
+
+        <!-- Basic Table with w3-table and w3-striped with all borders, color highlighting certain fields with hover, adding symbols--><br><br>
+        <table class="w3-table w3-striped w3-table-all">
+            <tr>
+                <th>Player name</th>
+                <th>Team</th>
+                <th>Yards</th>
+                <th>TD</th>
+            </tr>
+            <tr>
+                <td class="w3-hover-green">Nick Foles</td>
+                <td>Philadelphia Eagles</td>
+                <td>373</td>
+                <td>3</td>
+                <td>&#9997</td>
+                <td class="w3-text-red">&times</td>
+            </tr>
+            <tr>
+                <td class="w3-hover-blue">Tom Brady </td>
+                <td>New England Patriots </td>
+                <td>505</td>
+                <td>3</td>
+                <td>&#9997</td>
+                <td class="w3-text-red">&times</td>
+            </tr>
+            <tr>
+                <td class="w3-hover-yellow">Trey Burton </td>
+                <td>Philadelphia Eagles </td>
+                <td>1</td>
+                <td>1</td>
+                <td>&#9997</td>
+                <td class="w3-text-red">&times</td>
+            </tr>
+        </table>
+
+        <!-- Basic list--><br><br>
+        <ul class="w3-ul w3-container">
+        <li>Soccer</li>
+        <li>Football</li>
+        <li>Baseball</li>
+        </ul>
+
+        <!-- Basic list with border, margin and card with 4 pixel shadow-->
+        <ul class="w3-ul w3-border w3-margin w3-card-4" style="width:20%;">
+        <li class="w3-display-container">Soccer </li>
+        <li>Football</li>
+        <li>Baseball</li>
+        </ul>
+
+        <!-- Basic list with border, margin and card with 4 pixel shadow, withoption to delete itgem from list-->
+        <ul class="w3-ul w3-border w3-margin w3-card-4" style="width:20%;">
+        <li class="w3-display-container">Soccer <span onclick="this.parentElement.style.display='none'" class="w3-button w3-display-right">&times;</span></li>
+        <li class="w3-display-container">Football <span onclick="this.parentElement.style.display='none'" class="w3-button w3-display-right">&times;</span></li>
+        <li class="w3-display-container">Baseball <span onclick="this.parentElement.style.display='none'" class="w3-button w3-display-right">&times;</span></li>
+        </ul>
+
+        <!-- Basic list with border, margin and card with 4 pixel shadow, withoption to delete itgem from list and adding icons-->
+        <ul class="w3-ul w3-border w3-margin w3-card-4" style="width:20%;">
+        <li class="w3-display-container"><img src="soccer.png" class="w3-bar-item" width="32" height="32">&nbsp Soccer <span onclick="this.parentElement.style.display='none'" class="w3-button w3-display-right">&times;</span></li>
+        <li class="w3-display-container"><img src="football.png" class="w3-bar-item" width="32" height="32">&nbsp Football <span onclick="this.parentElement.style.display='none'" class="w3-button w3-display-right">&times;</span></li>
+        <li class="w3-display-container"><img src="baseball.png" class="w3-bar-item" width="32" height="32">&nbsp Baseball <span onclick="this.parentElement.style.display='none'" class="w3-button w3-display-right">&times;</span></li>
+        </ul>
+
+    </body>
+</html>

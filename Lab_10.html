@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="w3.css">
+        <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+        <style>
+            img {
+                width: 100px;
+            }
+        </style>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <title>Lab 10</title>
+    </head>
+
+    <body>
+    <!-- Animate  from top, bottom, left and right -->
+        <div class="w3-container">
+            <div class="w3-panel w3-border-red w3-pale-red w3-round-large w3-leftbar w3-animate-top">
+                <p>Pop From Top!</p>
+            </div>
+        </div>
+        <div class="w3-container">
+            <div class="w3-panel w3-border-red w3-pale-red w3-round-large w3-leftbar w3-animate-bottom">
+                <p>Pop From Bottom!</p>
+            </div>
+        </div>	
+        <div class="w3-container">
+            <div class="w3-panel w3-border-red w3-pale-red w3-round-large w3-leftbar w3-animate-left">
+                <p>Pop From Left!</p>
+            </div>
+        </div>	
+        <div class="w3-container">
+            <div class="w3-panel w3-border-red w3-pale-red w3-round-large w3-leftbar w3-animate-right">
+                <p>Pop From Right!</p>
+            </div>
+        </div>	
+        
+        <div class="w3-container">
+            <div class="w3-panel w3-border-red w3-pale-red w3-round-large w3-leftbar w3-animate-opacity">
+                <p>Transparent TO Opaque!</p>
+            </div>
+        </div>	
+        
+        <div class="w3-container">
+            <div class="w3-panel w3-border-red w3-pale-red w3-round-large w3-leftbar w3-animate-fading">
+                <p>Fade Effect</p>
+            </div>
+        </div>	
+        
+        
+        <!-- Animate  Spinner-->
+        <div class="w3-section w3-row w3-container">
+            <div class="w3-col" style="width:50px;">
+                <i class="w3-xxlarge w3-spin fa fa-spinner"></i></div>
+                <div class="w3-rest">Saving...</div>
+            </div>
+        </div>
+
+        <!-- Modals -->
+        <div id="ContactUs" class="w3-modal w3-center w3-animate-opacity">
+            <div class="w3-modal-content">
+                <div class="w3-teal w3-display-container">
+                    <span onclick="document.getElementById('ContactUs').style.display='none'"
+                        class="w3-button w3-large w3-display-topright">&times;</span>
+                    <h2>Contact Us</h2>
+                </div>
+            </div>
+        </div>
+    
+        <button onclick="document.getElementById('ContactUs').style.display='block'" class="w3-button">Contact Us</button>
+
+
+        <!-- Images -->
+        <div class="w3-container w3-margin">
+            <img src="beast.jpg" alt="beast">
+        </div>
+
+        <div class="w3-container w3-margin">
+            <img src="beast.jpg" alt="beast" class="w3-circle">
+        </div>
+
+        <div class="w3-container w3-margin">
+            <img src="beast.jpg" alt="beast" class="w3-image">
+        </div>
+
+        <div class="w3-container w3-margin">
+            <img src="beast.jpg" alt="beast" class="w3-image w3-opacity-max">
+        </div>
+
+        <div class="w3-container w3-margin">
+            <img src="beast.jpg" alt="beast" class="w3-image w3-opacity">
+        </div>
+
+        <div class="w3-container w3-margin">
+            <img src="beast.jpg" alt="beast" class="w3-image w3-opacity-min">
+        </div>
+
+        <div class="w3-container w3-margin">
+            <img src="beast.jpg" alt="beast" class="w3-image w3-grayscale-max">
+        </div>
+
+        <div class="w3-container w3-margin">
+            <img src="beast.jpg" alt="beast" class="w3-image w3-grayscale">
+        </div>
+
+        <div class="w3-container w3-margin">
+            <img src="beast.jpg" alt="beast" class="w3-image w3-grayscale-min">
+        </div>
+
+
+        <!-- SLideshow --><hr>
+        <div class="w3-display-container w3-content w3-container">
+            <img class="w3-image mySlides" src="beast.jpg">
+            <img class="w3-image mySlides" src="wolverine.jpg">
+            <p>
+                <button class="w3-button w3-black" onclick="plusDivs(-1)">&#10094;</button>
+                <button class="w3-button w3-black" onclick="plusDivs(1)">&#10095;</button>
+            </p>
+        </div>
+
+
+        <script>
+            var slideIndex = 1;
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+            showDivs(slideIndex += n);
+        }
+
+        function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            if (n > x.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = x.length }
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            x[slideIndex - 1].style.display = "block";
+        }
+        </script>
+
+    </body>
+</html>

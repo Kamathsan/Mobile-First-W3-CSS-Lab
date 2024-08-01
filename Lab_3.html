@@ -1,0 +1,85 @@
+<DOCTYPE html>
+<html>
+
+    <head>
+        <title>Lab 3</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="w3.css" />
+    </head>
+
+    <body>
+        <!-- Collapsing SideBar -->
+        <div class="w3-sidebar w3-bar-block w3-border-right" style="display: none; z-index: 2" id="mySidebar">
+            <button onclick="w3_close()" class="w3-bar-item w3-large">
+                &times;
+            </button>
+            <button onclick="openDiv('Airport');" class="w3-bar-item w3-button">
+                Airport
+            </button>
+            <button onclick="openDiv('Hotel');" class="w3-bar-item w3-button">
+                Hotel
+            </button>
+            <button onclick="openDiv('Rental');" class="w3-bar-item w3-button">
+                Rental
+            </button>
+        </div>
+
+        <!-- Left Tab -->
+        <div class="w3-sidebar w3-bar-block w3-pale-blue w3-border-blue w3-border"
+            style="width: 120px; margin-top: 40px">
+            <button onclick="openDiv('Airport');" class="w3-bar-item w3-button">
+                Airport
+            </button>
+            <button onclick="openDiv('Hotel');" class="w3-bar-item w3-button">
+                Hotel
+            </button>
+            <button onclick="openDiv('Rental');" class="w3-bar-item w3-button">
+                Rental
+            </button>
+        </div>
+
+        <!-- Top Tab -->
+        <div class="w3-bar w3-pale-blue w3-leftbar w3-border-blue w3-border">
+            <span id="openNav" class="w3-bar-item w3-button" onclick="w3_open();">&#9776;
+            </span>
+            <button onclick="openDiv('Airport');" class="w3-bar-item w3-button">
+                Airport
+            </button>
+            <button onclick="openDiv('Hotel');" class="w3-bar-item w3-button">
+                Hotel
+            </button>
+            <button onclick="openDiv('Rental');" class="w3-bar-item w3-button">
+                Rental
+            </button>
+        </div>
+
+        <div id="Airport" class="travel" style="margin-left: 130px">
+            <p>Airport details</p>
+        </div>
+        <div id="Hotel" class="travel" style="display: none; margin-left: 130px">
+            <p>Hotel details</p>
+        </div>
+        <div id="Rental" class="travel" style="display: none; margin-left: 130px">
+            <p>Rental details</p>
+        </div>
+
+        <script>
+            function openDiv(divName) {
+                var x = document.getElementsByClassName("travel");
+                for (var i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                document.getElementById(divName).style.display = "block";
+            }
+
+            function w3_open() {
+                document.getElementById("mySidebar").style.display = "block";
+            }
+
+            function w3_close() {
+                document.getElementById("mySidebar").style.display = "none";
+            }
+        </script>
+    </body>
+
+</html>

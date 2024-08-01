@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+    <title>Lab 5</title>
+</head>
+
+<body>
+    <div id="alert" class="w3-border w3-border-red w3-display-container w3-panel w3-pale-red w3-margin"
+        style="display: none;">
+        <span onclick="this.parentElement.style.display='none'" class="w3-button w3-pale-red w3-large
+             w3-display-topright">&times;</span>
+        <h3 class="w3-text-red" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">ERROR</h3>
+        <p>Division by zero is not defined!!!</p>
+    </div>
+    <div class="w3-container w3-margin">
+        <button style="font-family: Tangerine, script, serif;" class="w3-blue w3-round-large" onclick="document.getElementById('alert').style.display='block'">
+            Divide 5/0
+        </button>
+    </div>
+    <script>
+
+    </script>
+</body>
+
+</html>

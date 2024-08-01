@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lab 9</title>
+        <link rel="stylesheet" href="w3.css">
+    </head>
+    <body>
+        <!-- Basic Button --><br>
+        <input type="button" value="button text" href="#" onclick="" class="w3-margin">
+
+        <!-- Button with COlor--><br>
+         <div class="w3-container w3-margin">
+            <a href="save.aspx" class="w3-btn w3-green">Save changes</a>
+            <a href="discard.aspx" class="w3-btn w3-red">Discard changes</a>
+        </div>
+
+        <!-- Rounded Button with COlor and hover effect and a disabled button-->
+        <div class="w3-container w3-margin">
+            <a href="#" class="w3-btn w3-green w3-round-xxlarge w3-hover-blue">Save changes</a>
+            <a href="#" class="w3-btn w3-red w3-round-xxlarge w3-hover-blue">Discard changes</a>
+            <a href="#" class="w3-btn w3-red w3-round-xxlarge w3-disabled">DISABLED</a>
+        </div>
+
+        <!-- Rounded Button with hover and ripple effect-->
+        <div class="w3-container w3-margin">
+        <a href="#" class="w3-btn w3-green w3-round-xxlarge w3-hover-blue w3-ripple">Save changes</a>
+        </div>
+
+        <!-- Labels-->
+        <!-- CSS Badges-->
+
+        <div class="w3-container w3-margin" style="width:18%;">
+            <p>w3-badge <span class="w3-badge w3-right">9</span></p>
+            <p>w3-badge w3-red <span class="w3-badge w3-red w3-right">4</span></p>
+            <p>w3-badge w3-red w3-large<span class="w3-badge w3-blue w3-right w3-large">2</span></p>
+        </div>
+
+        <!-- CSS Badges within other elements-->
+        <div class="w3-container w3-margin" style="width:18%;">
+            <ul class="w3-ul w3-border">
+                <li>Ross <span class="w3-badge w3-right w3-margin-right">4</span></li>
+                <li>Rachel <span class="w3-badge w3-right w3-margin-right">8</span></li>
+                <li>Chandler<span class="w3-badge w3-right w3-margin-right">3</span></li>
+                <li>Joey<span class="w3-badge w3-right w3-margin-right">5</span></li>
+                <li>Monica<span class="w3-badge w3-right w3-margin-right">6</span></li>
+            </ul>
+        </div>
+
+        <!-- CSS Tags-->
+        <div class="w3-container"> <p>Status: <span class="w3-tag w3-green">Processing</span></p>
+        </div>
+
+        <!-- CSS Tags Customization-->
+        <div class="w3-container">
+        <span class="w3-tag w3-red w3-center w3-round-large w3-padding w3-margin">The thermal printer should only be<br/>used to print prescriptions sheets.</span>
+        </div>
+
+
+        <!-- Form Elements --><hr/>
+        <div class="w3-container w3-padding w3-margin">
+            <div>
+                <input type="text" class="w3-input w3-border w3-round-xxlarge" name="first" placeholder="First Name">
+            </div><br>
+            
+            <div>
+                <input type="radio" class="w3-radio" name="phoneType" value="cell" checked>
+                <label>Cell</label>
+                <input type="radio" class="w3-radio" name="phoneType" value="work">
+                <label>Work</label>
+                <input type="radio" class="w3-radio" name="phoneType" value="home">
+                <label>Home</label>
+            </div><br>
+
+            <div>
+                <input type="checkbox" class="w3-check" checked>
+                <label>Overnight shipping</label>
+                <input type="checkbox" class="w3-check" >
+                <label>Insurance</label>
+            </div><br>
+
+            <div>
+                <select class="w3-select w3-border" name="option">
+                    <option value= "" disabled selected>Choose your option</option>
+                    <option value= "1">JavaScript</option>
+                    <option value= "2">Python</option>
+                    <option value= "3">Java</option>
+                </select>
+            </div>
+            <br><br><br><br><br>
+
+        </div>
+
+    </body>
+</html>

@@ -1,0 +1,56 @@
+<DOCTYPE html>
+  <html>
+    <head>
+      <title>Lab 4</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <link rel="stylesheet" href="w3.css" />
+    </head>
+    <body>
+      <!-- Accordian -->
+      <h3>Accordian</h3>
+      <button onclick="openPanel('Airport');" class="w3-btn w3-block w3-pale-blue w3-border-blue w3-border w3-leftbar w3-left-align">
+        Airport departure and arrival information
+      </button>
+      <div id="Airport" class="w3-container w3-hide">
+        <p>Airports</p>
+      </div>
+      <button onclick="openPanel('Hotel');" class="w3-btn w3-block w3-pale-green w3-border-green w3-border w3-leftbar w3-left-align">
+        Resort/Hotel Information
+      </button>
+      <div id="Hotel" class="w3-container w3-hide">
+        <p>Resort/Hotel</p>
+      </div>
+      <button onclick="openPanel('Guest');" class="w3-btn w3-block w3-pale-red w3-border-red w3-border w3-leftbar w3-left-align">
+        Guest details
+      </button>
+      <div id="Guest" class="w3-container w3-hide">
+        <p>Guest Details</p>
+      </div>
+
+      <!-- Card -->
+      <h3>Card</h3>
+      <div class="w3-card-4 w3-cyan w3-padding w3-margin">
+        <p class="w3-text-white w3-large">Neeraj Chopra</p>
+        <p>Javelin throw champion</p>
+        </div>
+
+        <!-- Panel -->
+        <h3>Panel</h3>
+        <div class="w3-panel w3-red w3-round-xxlarge w3-margin">
+          <h3 class="w3-text-yellow"><b>Warning</b></h3>
+          <p>This action will delete hundreds of records and will be recorded in
+          the audit trail</p>
+          </div>
+
+      <script>
+        function openPanel(id) {
+          var x = document.getElementById(id);
+          if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+          } else {
+            x.className = x.className.replace(" w3-show", "");
+          }
+        }
+      </script>
+    </body>
+  </html></DOCTYPE>
